@@ -1,46 +1,50 @@
-//Object Destructuring
-/* Object destructuring in javascript is a feature that allows you to extract the properties of objects 
-into variables. 
-This can be useful for assigning the properties of an object
-to variables in a single statement.*/
+//Javascript Class
+/* Classes are one of the features introduced in the ES6 version of Javascript
+ Javascript class is a templates for creating objects.*/
 
-// const person = {
-//     firstName: "Kshitij",
-//     lastName: "Chaudhary"
+//  class ClassName{
+//     constructor(){
+
+//     }
+//  }
+
+
+
+// class Person{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
 // }
+// const person1 = new Person("Kshitij Hero", 25);
+// const person2 = new Person("Mahan Saksena", 26);
 
-//let {property1: variable1, property2: variable2} = object;
-// let {firstName: fName, lastName: lName} = person;
-// console.log(fName);
 
-// const person = {
-//     firstName: "Kshitij",
-//     lastName: "Chaudhary"
+// console.log(person1);
+// console.log(person2);
+
+
+//Javascript class methods
+/* We can add any number of methods in Javascript class */
+// class Person{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     greet(){
+//         return "Hello " + this.name;
+//     }
+
+//     changeName(newName){
+//         this.name = newName;
+
+//     }
 // }
-// let {firstName, lastName} = person;
-// console.log(lastName);
+// const person1 = new Person("Mun Maharjan", 23);
+// //console.log(person1.greet());
+// person1.changeName("Nikita")
+// //console.log(person1);
+// console.log(person1.name);
 
 
-// const person = {
-//     firstName: "Kshitij",
-//     lastName: "Chaudhary"
-// }
-// let {firstName, lastName} = person;
-// console.log(lastName);
-
-// const person = {
-//     firstName: "Kshitij",
-//     lastName: "Chaudhary",
-//     age: 25
-// }
-// let {firstName, lastName,age=18} = person;
-// console.log(age);
-
-//Object Literal Syntax Extensions in ES6
-let firstName = "Kshitij";
-let lastName = "Chaudhary";
-const person = {
-    firstName,
-    lastName
-}
-console.log(person);
+//Getters and Setters in Javascript

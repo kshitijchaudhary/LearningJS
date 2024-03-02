@@ -53,14 +53,25 @@
 // person.greet();
 
 
-const person = {
-    firstName: "Xitol",
-    lastName: "Chaudhary",
-    //method which returns first name and last name of person
-    getFullName: function(){
-        return this.firstName + " " + this.lastName
-    }
-}
+// const person = {
+//     firstName: "Xitol",
+//     lastName: "Chaudhary",
+//     //method which returns first name and last name of person
+//     getFullName: function(){
+//         return this.firstName + " " + this.lastName
+//     }
+// }
 
-console.log(person.getFullName());
+// console.log(person.getFullName());
+
+
+/* If we use "this" keyword along, or inside a function, then
+it will refer to the global object, that is "window" object
+
+when we use "this" keyword in the "Event" then it will refer to
+the element that receive the event
+
+"this" is a keyword and it is not a variable so we can't change
+the value of "this"*/
+console.log(this);
 
